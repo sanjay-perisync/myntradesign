@@ -1,0 +1,183 @@
+[
+  {
+    "image": "https://i.pinimg.com/originals/6b/ca/cf/6bcacff866710545b31ebe5841a2721b.png",
+    "price": "₹1,000",
+    "category": "Shirts",
+    "brand": "Roadster",
+    "gender": "Men",
+    "color": "Black",
+    "discount": "10"
+  },
+  {
+    "image": "https://assets.myntassets.com/h_480,q_100,w_360/v1/assets/images/2503003/2018/4/5/11522930057987-Roadster-Men-Shirts-1521522930057762-1.jpg",
+    "price": "₹1,500",
+    "category": "Shirts",
+    "brand": "Roadster",
+    "gender": "Men",
+    "color": "Red",
+    "discount": "20"
+  },
+  {
+    "image": "https://static.magicpin.com/storage/blog/images/myntra-online-shopping-for-mens_Casual_GreenShirt.jpg",
+    "price": "₹2,500",
+    "category": "Shirts",
+    "brand": "Highlander",
+    "gender": "Men",
+    "color": "Green",
+    "discount": "30"
+  },
+  {
+    "image": "https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/10685438/2019/11/11/dbaf0f38-f524-4d9d-b8a9-74bc27aeb47a1573450859243-WROGN-Men-Grey--White-Slim-Fit-Checked-Casual-Shirt-43515734-1.jpg",
+    "price": "₹1,500",
+    "category": "Shirts",
+    "brand": "HRX",
+    "gender": "Boys",
+    "color": "White",
+    "discount": "40"
+  },
+  {
+    "image": "https://static.magicpin.com/storage/blog/images/myntra-online-shopping-for-mens_Casual_Sweatshirt.jpg",
+    "price": "₹3,500",
+    "category": "Sweatshirts",
+    "brand": "HERE & NOW",
+    "gender": "Men",
+    "color": "Green",
+    "discount": "50"
+  },
+  {
+    "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/20695836/2022/11/10/ba1724c2-c606-481c-a0ca-63424b61a8661668078028270WomensRayonPrintedEmbroideredKurtaWithPantAndDupatta1.jpg",
+    "price": "₹3,000",
+    "category": "Kurta",
+    "brand": "Mast & Harbour",
+    "gender": "Women",
+    "color": "Blue",
+    "discount": "60"
+  },
+  {
+    "image": "https://i.pinimg.com/originals/1b/19/41/1b1941c4049995b37eb529c3cf8bc5e3.jpg",
+    "price": "₹800",
+    "category": "Sweatshirts",
+    "brand": "Campus Sutra",
+    "gender": "Men",
+    "color": "Gray",
+    "discount": "70"
+  },
+ 
+  {
+    "image": "https://i.pinimg.com/originals/86/dd/80/86dd80f45bfc6e4573d3de78e9ddd116.jpg",
+    "price": "₹1,100",
+    "category": "Jeans",
+    "brand": "Roadster",
+    "gender": "Men",
+    "color": "Yellow",
+    "discount": "20"
+  },
+  {
+    "image": "https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/1/4/2240b4ab-c188-418e-a380-94549d65114c1546588895557-1.jpg",
+    "price": "₹700",
+    "category": "Jeans",
+    "brand": "Highlander",
+    "gender": "Boys",
+    "color": "Navy Blue",
+    "discount": "30"
+  },
+  {
+    "image": "https://th.bing.com/th/id/OIP.i3efs22NaSAImUauuo8AnwHaLH?w=1060&h=1591&rs=1&pid=ImgDetMain",
+    "price": "₹1,000",
+    "category": "Shirts",
+    "brand": "HRX",
+    "gender": "men",
+    "color": "Blue",
+    "discount": "40"
+  },
+  {
+    "image": "https://southindianactress.in/wp-content/uploads/2022/07/Samantha-Myntra-43-1378x2000.jpg",
+    "price": "₹1,200",
+    "category": "Saree",
+    "brand": "Mast & Harbour",
+    "gender": "Girls",
+    "color": "Red",
+    "discount": "50"
+  },
+  {
+    "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/20695836/2022/11/10/ba1724c2-c606-481c-a0ca-63424b61a8661668078028270WomensRayonPrintedEmbroideredKurtaWithPantAndDupatta1.jpg",
+    "price": "₹2,000",
+    "category": "Kurta",
+    "brand": "Mast & Harbour",
+    "gender": "Women",
+    "color": "Blue",
+    "discount": "60"
+  },
+  {
+    "image": "https://th.bing.com/th/id/OIP.Q-guWZnRlUVXb_uKF98HuQHaJ4?rs=1&pid=ImgDetMain",
+    "price": "₹4,500",
+    "category": "Jeans",
+    "brand": "Campus Sutra",
+    "gender": "Girls",
+    "color": "Yellow",
+    "discount": "70"
+  },
+  {
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/3f2da750810505.58eb77845fd64.jpg",
+    "price": "₹4,000",
+    "category": "Shirts",
+    "brand": "Roadster",
+    "gender": "Women",
+    "color": "Blue",
+    "discount": "10"
+  },
+  {
+    "image": "https://th.bing.com/th/id/OIP.us9n7G5C3HHz7hRMdlMa8QHaKI?w=640&h=875&rs=1&pid=ImgDetMain",
+    "price": "₹4,500",
+    "category": "Jeans",
+    "brand": "HRX",
+    "gender": "Women",
+    "color": "Navy Blue",
+    "discount": "20"
+  },
+  {
+    "image": "https://th.bing.com/th/id/OIP.qrUK-Kg4GjYZADTPK5c98wHaJ4?rs=1&pid=ImgDetMain",
+    "price": "₹500",
+    "category": "Jeans",
+    "brand": "Highlander",
+    "gender": "Women",
+    "color": "Red",
+    "discount": "30"
+  },
+  {
+    "image": "https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/15652468/2021/9/28/cee304b6-10db-4bf0-ad0a-db17861b80a51632806571201MayraPinkFloralEmbellishedBlousonTop1.jpg",
+    "price": "₹600",
+    "category": "Tshirts",
+    "brand": "HERE & NOW",
+    "gender": "Girls",
+    "color": "White",
+    "discount": "40"
+  },
+  {
+    "image": "https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/12/26/dd68b385-342d-4c09-a5fd-02e1cd1ef5621577354735594-1.jpg",
+    "price": "₹750",
+    "category": "Tshirts",
+    "brand": "Mast & Harbour",
+    "gender": "Women",
+    "color": "Yellow",
+    "discount": "50"
+  },
+  {
+    "image": "https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/productimage/2020/11/14/74036887-d727-4c6b-8d05-eb2d93ec774d1605323467370-1.jpg",
+    "price": "₹1,000",
+    "category": "Tshirts",
+    "brand": "Campus Sutra",
+    "gender": "Women",
+    "color": "Gray",
+    "discount": "60"
+  },
+  {
+    "image": "https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/1420155/2016/8/19/11471587420422-Roadster-Women-Red-Solid-Regular-Top-9031471587420200-1.jpg",
+    "price": "₹2,300",
+    "category": "Tshirts",
+    "brand": "Roadster",
+    "gender": "Women",
+    "color": "Red",
+    "discount": "70"
+  }
+]

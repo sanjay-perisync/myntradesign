@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="m-0 p-0 box-border">
+    <!-- main container -->
+    <div class="flex flex-col gap-5">
+
+        <!-- navbar -->
+        <div class="flex flex-wrap lg:flex-nowrap justify-around py-2 w-full fixed top-0 left-0 z-10 bg-white shadow-md">
+            <!-- logo -->
+            <div class="p-2">
+                <img src="https://www.freelogovectors.net/wp-content/uploads/2023/01/myntra-logo-freelogovectors.net_.png"
+                    alt="logo" class="w-20 h-10">
+            </div>
+
+            <!-- Options -->
+            <div class="hidden lg:flex p-4 gap-2 items-center justify-between text-sm">
+                <div class="px-4 py-2 text-sm font-medium"><a href="">MEN</a></div>
+                <div class="px-4 py-2 text-sm font-medium"><a href="">WOMAN</a></div>
+                <div class="px-4 py-2 text-sm font-medium"><a href="">KIDS</a></div>
+                <div class="px-4 py-2 text-sm font-medium"><a href="">HOME & LIVING</a></div>
+                <div class="px-4 py-2 text-sm font-medium"><a href="">BEAUTY</a></div>
+                <div class="px-4 py-2 flex gap-2 text-sm font-medium">
+                    <a href="">STUDIO</a>
+                </div>
+            </div>
+
+
+
+            <!-- profile, bags, wishlist -->
+            <div class="flex items-center justify-between gap-4 md:hidden">
+                <!-- Profile Icon -->
+                <div class="flex flex-col items-center text-center gap-2">
+                    <div>
+                        <!-- Profile SVG Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zM12 14c-4.41 0-8 2.69-8 6v1h16v-1c0-3.31-3.59-6-8-6z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium">Profile</p>
+                    </div>
+                </div>
+
+                <!-- Wishlist Icon -->
+                <div class="flex flex-col items-center text-center gap-1">
+                    <div>
+                        <!-- Wishlist SVG Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium">Wishlist</p>
+                    </div>
+                </div>
+
+                <!-- Bags Icon -->
+                <div class="flex flex-col justify-center items-center text-center gap-1">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" class="w-5 h-5">
+                            <path
+                                d="M6 2C5.44772 2 5 2.44772 5 3V6H3C2.44772 6 2 6.44772 2 7V21C2 21.5523 2.44772 22 3 22H21C21.5523 22 22 21.5523 22 21V7C22 6.44772 21.5523 6 21 6H19V3C19 2.44772 18.5523 2 18 2H6Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium">Bags</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Search Bar -->
+            <div
+                class="w-full lg:w-[400px] md:w-[300px] mt-4 px-4 sm:px-8 lg:px-0 md:px-0 bg-slate-200 border rounded-lg flex items-center">
+
+                <!-- Search Icon and Input Section -->
+                <div class="flex items-center w-full">
+                    <div class="p-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="search icon"
+                            class="h-5 w-5">
+                    </div>
+                    <input type="text" placeholder="Search for products, Brands & More"
+                        class="w-full py-2 px-3 focus:outline-none bg-slate-200 rounded-lg text-sm" id="search-bar">
+                </div>
+            </div>
+
+
+
+
+            <!-- profile, bags, wishlist -->
+            <div class="hidden md:flex items-center justify-between gap-4">
+                <!-- Profile Icon -->
+                <div class="flex flex-col items-center text-center gap-2">
+                    <div>
+                        <!-- Profile SVG Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zM12 14c-4.41 0-8 2.69-8 6v1h16v-1c0-3.31-3.59-6-8-6z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium">Profile</p>
+                    </div>
+                </div>
+
+                <!-- Wishlist Icon -->
+                <div class="flex flex-col items-center text-center gap-1">
+                    <div>
+                        <!-- Wishlist SVG Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium">Wishlist</p>
+                    </div>
+                </div>
+
+                <!-- Bags Icon -->
+                <div class="flex flex-col justify-center items-center text-center gap-1">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" class="w-5 h-5">
+                            <path
+                                d="M6 2C5.44772 2 5 2.44772 5 3V6H3C2.44772 6 2 6.44772 2 7V21C2 21.5523 2.44772 22 3 22H21C21.5523 22 22 21.5523 22 21V7C22 6.44772 21.5523 6 21 6H19V3C19 2.44772 18.5523 2 18 2H6Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium pt-1">Bags</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- body content-->
+        <div class="flex flex-wrap sm:flex-wrap lg:flex-nowrap md:flex-nowrap justify-between pt-20 md:pt-24">
+          
+           
+
+            <!-- left section -->
+            <div class="flex flex-col gap-4 w-full sm:w-64 mr-2 py-2">
+
+              
+
+                <div class="">
+                    <p class="p-2">Home / Clothing /<span class="text-sm font-bold">Apparel</span></p>
+                </div>
+
+                <div>
+                    <p class="p-2"><span class="text-sm font-bold">Apparel</span> - 6555 items</p>
+                </div>
+
+                
+
+                <!-- filter section -->
+
+                <div class="flex justify-between flex-col gap-2">
+
+                    <!-- header of filter -->
+                    <div class="flex justify-between p-2">
+                        <div>
+                            <p class="font-bold text-sm">FILTERS</p>
+                        </div>
+
+                        <div>
+                            <p class="text-rose-500 text-sm font-medium">CLEAR ALL</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-slate-200">
+                        <!-- filter gender category -->
+                        <div class="flex flex-col gap-2 p-2 border-b border-slate-200">
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="gender" value="Men" class="form-radio" />
+                                    <span class="ml-2 font-medium">Men</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="gender" value="Women" class="form-radio" />
+                                    <span class="ml-2 font-medium">Women</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="gender" value="Boys" class="form-radio" />
+                                    <span class="ml-2 font-medium">Boys</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="gender" value="Girls" class="form-radio" />
+                                    <span class="ml-2 font-medium">Girls</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- categories -->
+                        <div class="flex flex-col justify-between border-b border-slate-200 p-2">
+                            <div class="flex justify-between">
+                                <div>
+                                    <span class="font-bold text-sm">CATEGORIES</span>
+                                </div>
+                                <div class="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="search icon"
+                                        class="w-4 h-4">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="Tshirts" value="Tshirts"
+                                        class="form-checkbox peer text-pink-600 focus:ring-pink-500 checked:bg-pink-600 checked:border-pink-600 focus:outline-none" />
+                                    <span class="ml-2">Tshirts</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="Shirts" value="Shirts"
+                                        class="form-checkbox peer text-pink-600 focus:ring-pink-500 checked:bg-pink-600 checked:border-pink-600 focus:outline-none" />
+                                    <span class="ml-2">Shirts</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="Jeans" value="Jeans"
+                                        class="form-checkbox peer text-pink-600 focus:ring-pink-500 checked:bg-pink-600 checked:border-pink-600 focus:outline-none" />
+                                    <span class="ml-2">Jeans</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="Trousers" value="Trousers"
+                                        class="form-checkbox peer text-pink-600 focus:ring-pink-500 checked:bg-pink-600 checked:border-pink-600 focus:outline-none" />
+                                    <span class="ml-2">Trousers</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="Sweatshirts" value="Sweatshirts"
+                                        class="form-checkbox peer text-pink-600 focus:ring-pink-500 checked:bg-pink-600 checked:border-pink-600 focus:outline-none" />
+                                    <span class="ml-2">Sweatshirts</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="Jackets" value="Jackets"
+                                        class="form-checkbox peer text-pink-600 focus:ring-pink-500 checked:bg-pink-600 checked:border-pink-600 focus:outline-none" />
+                                    <span class="ml-2">Jackets</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="Kurta" value="Kurta"
+                                        class="form-checkbox peer text-pink-600 focus:ring-pink-500 checked:bg-pink-600 checked:border-pink-600 focus:outline-none" />
+                                    <span class="ml-2">Kurta</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="Saree" value="Saree"
+                                        class="form-checkbox peer text-pink-600 focus:ring-pink-500 checked:bg-pink-600 checked:border-pink-600 focus:outline-none" />
+                                    <span class="ml-2">Saree</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- categories ends -->
+
+
+
+
+                        <!-- Brands -->
+                        <div class="flex flex-col justify-between border-b border-slate-200 p-2">
+                            <div class="flex justify-between">
+                                <div>
+                                    <span class="font-bold text-sm">BRAND</span>
+                                </div>
+                                <div class="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="search icon"
+                                        class="w-4 h-4">
+                                </div>
+                            </div>
+
+                            <!-- Brand checkboxes -->
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="brand" value="Roadster"
+                                        class="form-radio text-blue-600" />
+                                    <span class="ml-2">Roadster</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="brand" value="Highlander"
+                                        class="form-radio text-blue-600" />
+                                    <span class="ml-2">Highlander</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="brand" value="HRX" class="form-radio text-blue-600" />
+                                    <span class="ml-2">HRX</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="brand" value="HERE & NOW"
+                                        class="form-radio text-blue-600" />
+                                    <span class="ml-2">HERE & NOW</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="brand" value="Mast & Harbour"
+                                        class="form-radio text-blue-600" />
+                                    <span class="ml-2">Mast & Harbour</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="brand" value="Campus Sutra"
+                                        class="form-radio text-blue-600" />
+                                    <span class="ml-2">Campus Sutra</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="brand" value="Flying Machines"
+                                        class="form-radio text-blue-600" />
+                                    <span class="ml-2">Flying Machines</span>
+                                </label>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- Price Range -->
+                        <div class="flex flex-col gap-4 p-2 border-b border-slate-200">
+                            <!-- Title -->
+                            <div>
+                                <span class="font-bold text-sm text-gray-800">PRICE</span>
+                            </div>
+
+                            <!-- Slider -->
+                            <div class="flex items-center">
+                                <input type="range" min="0" max="6000" step="1" value="200"
+                                    class="w-full h-2 rounded-lg appearance-none cursor-pointer" id="priceRange" />
+                            </div>
+
+                            <!-- Price Labels -->
+                            <div class="flex justify-between text-sm font-medium text-gray-800">
+                                <span id="minPrice">₹0</span>
+                                <span id="maxPrice">₹5,200+</span>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <!-- Colors -->
+                        <div class="flex flex-col justify-between p-2 border-b border-slate-200">
+                            <div class="flex justify-between">
+                                <div>
+                                    <span class="font-bold text-sm">COLOR</span>
+                                </div>
+                                <div class="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="search icon"
+                                        class="w-4 h-4">
+                                </div>
+                            </div>
+
+                            <!-- Color checkboxes -->
+                            <div class="flex items-center gap-2">
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="color" value="Blue" class="form-radio text-blue-600" />
+                                </label>
+                                <div class="bg-blue-500 rounded-full w-5 h-5"></div>
+                                <div><span class="ml-2">Blue</span></div>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="color" value="Navy Blue"
+                                        class="form-radio text-blue-600" />
+                                </label>
+                                <div class="bg-blue-900 rounded-full w-5 h-5"></div>
+                                <div><span class="ml-2">Navy Blue</span></div>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="color" value="Green"
+                                        class="form-radio text-blue-600" />
+                                </label>
+                                <div class="bg-green-500 rounded-full w-5 h-5"></div>
+                                <div><span class="ml-2">Green</span></div>
+                            </div>
+
+                           <div class="flex items-center gap-2">
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="color" value="Yellow" class="form-radio text-blue-600" />
+                                </label>
+                                <div class="bg-yellow-500 rounded-full w-5 h-5"></div>
+                                <div><span class="ml-2">Yellow</span></div>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="color" value="Red" class="form-radio text-blue-600" />
+                                </label>
+                                <div class="bg-red-500 rounded-full w-5 h-5"></div>
+                                <div><span class="ml-2">Red</span></div>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="color" value="Black"
+                                        class="form-radio text-blue-600" />
+                                </label>
+                                <div class="bg-black rounded-full w-5 h-5"></div>
+                                <div><span class="ml-2">Black</span></div>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="color" value="Gray" class="form-radio text-blue-600" />
+                                </label>
+                                <div class="bg-gray-500 rounded-full w-5 h-5"></div>
+                                <div><span class="ml-2">Gray</span></div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Discount Range -->
+                        <div class="flex flex-col justify-between p-2">
+                            <div class="flex justify-between">
+                                <div>
+                                    <span class="font-bold text-sm">DISCOUNT RANGE</span>
+                                </div>
+                                <div class="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="search icon"
+                                        class="w-4 h-4">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="discount" value="10" class="form-radio text-blue-600" />
+                                    <span class="ml-2">10% and above</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="discount" value="20" class="form-radio text-blue-600" />
+                                    <span class="ml-2">20% and above</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="discount" value="30" class="form-radio text-blue-600" />
+                                    <span class="ml-2">30% and above</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="discount" value="40" class="form-radio text-blue-600" />
+                                    <span class="ml-2">40% and above</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="discount" value="50" class="form-radio text-blue-600" />
+                                    <span class="ml-2">50% and above</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="discount" value="60" class="form-radio text-blue-600" />
+                                    <span class="ml-2">60% and above</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="discount" value="70" class="form-radio text-blue-600" />
+                                    <span class="ml-2">70% and above</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!-- right section -->
+            <div class="flex flex-col gap-4 w-full p-2 mt-28">
+
+                <!-- header -->
+                <div class="flex flex-wrap gap-4 justify-between py-4 px-2">
+
+                    <!-- left header -->
+                    <div class="flex flex-wrap justify-between gap-5">
+
+                        <!-- bundles -->
+                        <div class="border border-none hover:bg-gray-100 rounded-full flex gap-5 px-3 py-1 items-center">
+                            <div>
+                                <p>Bundles</p>
+                            </div>
+
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-4 w-4 mt-1 transition-transform duration-200 group-hover:rotate-180"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" id="dropdownArrow">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+
+                        </div>
+
+
+                        <!-- country of orgin -->
+                        <div class="border border-none hover:bg-gray-100 rounded-full flex gap-5 px-3 py-1 items-center">
+                            <div>
+                                <p>Country</p>
+                            </div>
+
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-4 w-4 mt-1 transition-transform duration-200 group-hover:rotate-180"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" id="dropdownArrow">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- size -->
+                        <div class="border border-none hover:bg-gray-100 rounded-full flex gap-5 px-3 py-1 items-center">
+                            <div>
+                                <p>Size</p>
+                            </div>
+
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-4 w-4 mt-1 transition-transform duration-200 group-hover:rotate-180"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" id="dropdownArrow">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <!-- right header -->
+
+                    <div class="flex justify-between items-center gap-10 border border-slate-400 p-2">
+                        <div>
+                            <p>Sort By:<span class="text-sm font-bold pl-1">Whats's New</span></p>
+                        </div>
+
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-4 w-4 mt-1 transition-transform duration-200 group-hover:rotate-180"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" id="dropdownArrow">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- header ends here-->
+
+
+
+                <!-- selected filters containers -->
+
+                <div class="flex flex-wrap gap-4 justify-between">
+                    <div class="flex items-center gap-2 border border-gray-400 px-2 rounded-md">
+                        <div>
+                            <p>item</p>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600 cursor-pointer"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                onclick="this.previousElementSibling.value = ''">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+                    <div class="flex items-center gap-2 border border-gray-400 px-2 rounded-md">
+                        <div>
+                            <p>item</p>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600 cursor-pointer"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                onclick="this.previousElementSibling.value = ''">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+                    <div class="flex items-center gap-2 border border-gray-400 px-2 rounded-md">
+                        <div>
+                            <p>item</p>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600 cursor-pointer"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                onclick="this.previousElementSibling.value = ''">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+                    <div class="flex items-center gap-2 border border-gray-400 px-2 rounded-md">
+                        <div>
+                            <p>item</p>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600 cursor-pointer"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                onclick="this.previousElementSibling.value = ''">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex items-center gap-2 border border-gray-400 px-2 rounded-md">
+                        <div>
+                            <p>item</p>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600 cursor-pointer"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                onclick="this.previousElementSibling.value = ''">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex items-center gap-2 border border-gray-400 px-2 rounded-md">
+                        <div>
+                            <p>item</p>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600 cursor-pointer"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                onclick="this.previousElementSibling.value = ''">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex items-center gap-2 border border-gray-400 px-2 rounded-md">
+                        <div>
+                            <p>item</p>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600 cursor-pointer"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                onclick="this.previousElementSibling.value = ''">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex items-center gap-2 border border-gray-400 px-2 rounded-md">
+                        <div>
+                            <p>item</p>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600 cursor-pointer"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                onclick="this.previousElementSibling.value = ''">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+                    <div class="flex items-center gap-2 border border-gray-400 px-2 rounded-md">
+                        <div>
+                            <p>item</p>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600 cursor-pointer"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                onclick="this.previousElementSibling.value = ''">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+                    <div class="flex items-center gap-2 border border-gray-400 px-2 rounded-md">
+                        <div>
+                            <p>item</p>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600 cursor-pointer"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                onclick="this.previousElementSibling.value = ''">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <!-- main cards container -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6"
+                    id="mycard">
+
+                </div>
+                <!-- main cards container ends here -->
+
+
+
+                <!-- pagination starts -->
+<div class="flex flex-wrap justify-center items-center gap-5 p-2">
+    <!-- Previous Page Button -->
+    <div class="flex items-center gap-2">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </div>
+      <div>
+        <li class="list-none">Page 1</li>
+      </div>
+    </div>
+  
+    <!-- Previous Button -->
+    <div class="border border-gray-400 px-4 py-2 rounded-md flex gap-1 items-center">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </div>
+      <div>
+        <button>Previous</button>
+      </div>
+    </div>
+  
+    <!-- Page Info -->
+    <li class="list-none">Page 1 of 136</li>
+  
+    <!-- Next Button -->
+    <div class="border border-gray-400 px-4 py-2 rounded-md flex gap-1 items-center">
+      <div>
+        <button>Next</button>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!-- pagination ends -->
+  
+
+            </div>
+            <!-- right section ends -->
+        </div>
+        <!-- body container ends -->
+
+
+
+
+
+
+        <!-- buy apparel and apparel price list -->
+
+        <!-- <div class="flex justify-center  gap-5 border border-black p-5"> -->
+
+        <!-- buy apparel -->
+        <!-- <div class="flex-1 flex flex-col gap-5 border border-red-500 p-5">
+                    <h2>BUY APPAREL</h2>
+
+                    <div class="flex flex-col justify-between gap-5">
+                        <h2>
+                            Buy the Latest in Apparel on Myntra
+                        </h2>
+
+                        <p>
+                            Shopping for the latest apparel is something that every one of us enjoys. And with the introduction of online shopping, buying the latest in fashion is as breezy as it can get. The benefits of shopping online from platforms such as Myntra are multifold with the biggest one being that you can find all your desired products under one roof.
+                        </p>
+
+                        <p>
+                            This means, whether you are looking for a glamorous <a href="">Wedding dress</a>
+                            or an everyday T-shirt, all your fashion requirements will be met on our platform. Read on to know about the different fashion apparels available on Myntra.
+                        </p>
+
+                        <h2>
+                            What are the Different Types of Apparel Available on Myntra?
+                        </h2>
+
+
+                        <p>
+                            Here are some of our offerings:
+                        </p>
+
+
+                        <p><strong>Apparel for Men</strong></p>
+
+                       <ul>
+
+                        <li>
+                            <strong>
+                                T-shirts
+                            </strong>
+                        </li>
+                       </ul>
+
+
+                       <p>
+                        When it comes to choosing casual apparel for men, there is hardly any option that beats the nonchalant style of a T-shirt. T-shirts or 
+                       </p>
+
+
+                       <ul>
+
+                        <li>
+                            <strong>
+                                shirts
+                            </strong>
+                        </li>
+                       </ul>
+
+
+                       <p>
+                        When it comes to choosing casual apparel for men, there is hardly any option that beats the nonchalant style of a T-shirt. T-shirts or 
+                       </p>
+
+                       <h4><strong>A Style Guide for Men and Women</strong> </h4>
+                       <ul>
+                        <li>Sport the classiest ensemble by teaming your white solid shirt with washed light-blue jeans. Complete the look by adding a pair of white kicks to your ensemble.</li>
+                        <li>Level up your fashion game next festive season by opting for a kurta-pyajams set</li>
+                       </ul>
+
+
+
+                    </div>
+                 </div> -->
+
+
+
+        <!-- apparel price list -->
+        <!-- <div class=" gap-5 border border-red-500 p-5">
+                    <h2>APPAREL PRICE LIST</h2>
+
+                    <table class="h-full">
+                        <tr>
+                            <th>Apparel</th>
+                            <th>PRICE(RS)</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="">Nautica Slim Fit Casual Shirt</a>
+                            </td>
+
+                            <td>
+                                <a href="">RS. 1249</a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <a href="">Nautica Slim Fit Casual Shirt</a>
+                            </td>
+
+                            <td>
+                                <a href="">RS. 1249</a>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>
+                                <a href="">Nautica Slim Fit Casual Shirt</a>
+                            </td>
+
+                            <td>
+                                <a href="">RS. 1249</a>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>
+                                <a href="">Nautica Slim Fit Casual Shirt</a>
+                            </td>
+
+                            <td>
+                                <a href="">RS. 1249</a>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>
+                                <a href="">Nautica Slim Fit Casual Shirt</a>
+                            </td>
+
+                            <td>
+                                <a href="">RS. 1249</a>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>
+                                <a href="">Nautica Slim Fit Casual Shirt</a>
+                            </td>
+
+                            <td>
+                                <a href="">RS. 1249</a>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>
+                                <a href="">Nautica Slim Fit Casual Shirt</a>
+                            </td>
+
+                            <td>
+                                <a href="">RS. 1249</a>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>
+                                <a href="">Nautica Slim Fit Casual Shirt</a>
+                            </td>
+
+                            <td>
+                                <a href="">RS. 1249</a>
+                            </td>
+                        </tr>
+                        
+                    </table>
+
+                  
+                 </div>
+
+            </div> -->
+
+
+
+
+    </div>
+    <!-- main container ends -->
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
